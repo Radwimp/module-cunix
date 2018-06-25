@@ -46,7 +46,7 @@ void    list_push(node_t *head, char *data)
 		return;
 	}
   cur_elem = head;
-  while ( cur_elem->next != NULL )
+  while (cur_elem->next != NULL)
     cur_elem = cur_elem->next;
   cur_elem->next = (node_t *) malloc(sizeof(node_t));
   cur_elem->next->data = data;
@@ -103,9 +103,10 @@ void   *list_remove(node_t **head, int pos)
 
 void	*list_rem(node_t *head, char *data) 
 {
-	node_t *cur_elem = head;
+	node_t *cur_elem;
 	int i = 1;
 	
+  cur_elem = head;
   while (strcmp(cur_elem->data,data) != 0)
   {
 		cur_elem = cur_elem->next;
