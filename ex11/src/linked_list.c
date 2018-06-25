@@ -38,7 +38,7 @@ void    list_destroy(node_t **head, void (*fp)(char *data))
 
 void    list_push(node_t *head, char *data)
 {
-  node_t *cur_elem = head;
+  node_t *cur_elem;
 
 	if (head == NULL)
 	{
