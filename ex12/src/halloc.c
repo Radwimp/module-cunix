@@ -98,4 +98,3 @@ void *halloc(size_t size)
 	pthread_mutex_unlock(&global_malloc_lock);
 	return (void*)(header + 1);
 }
-
